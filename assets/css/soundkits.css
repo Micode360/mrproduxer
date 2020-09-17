@@ -1,0 +1,136 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+.container > section:nth-of-type(1){
+      position: relative;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 45vh;
+}
+
+.glass {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: flex;
+   flex-direction: column; 
+   background-color: rgba(88, 80, 80, 0.329);
+}
+
+
+.header{
+    z-index:1;
+}
+
+.showcase-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-self: center;
+    font-size: 45px;
+    color: rgb(214, 212, 65);
+    margin: 45px 0 75px 0;
+    z-index:0;
+}
+
+
+
+
+.column-ii {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      background:#0e0d0d;
+      color: #ffffff;
+      margin: 20px 40px 20px 40px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+.img-card-ii{
+   width: 100%;
+   height: 200px;
+   border-radius: 4px 4px 0 0;
+}
+
+.column-ii div:nth-child(2){
+   padding: 18px;
+}
+
+.card-inline-ii{
+   position: relative;
+   display: flex;
+   flex-direction: inline;
+   margin-bottom: 8px;
+}
+
+.currency-ii, .author-ii{
+   font-weight: bold;
+}
+
+#heart-ii{
+   position: absolute;
+   right: 45px;
+   cursor: pointer;
+}
+#share-ii{
+  position: absolute;
+  right: 9px;
+  cursor: pointer;
+}
+
+#heart-ii:active{
+  color:rgb(141, 31, 31);
+  transform: scale(1.2);
+}
+
+
+#share-ii:active{
+  transform: scale(1.1);
+}
+
+.song-ii{
+   font-size: 20px;
+}
+
+.author-ii{
+   margin: 8px 0;
+}
+
+ .genre-ii,.author-ii{
+      font-size: 18px;
+      font-weight: lighter;
+      margin: 18px 0;
+}
+
+.currency-ii{
+   font-size: 20px;
+   margin-top: 36px;
+}
+
+.details-ii {
+   position: absolute;
+   bottom: 15px;
+   right: 25px;
+   display: inline-block;
+   padding: 10px 25px;
+   text-align: center;
+   margin-top: 20px;
+   font-weight: lighter;
+   background: rgb(170, 147, 15);
+   border-radius: 4px;
+   color: #fff;
+   text-decoration: none;
+   font-size: 15px;
+}
+
+.details-ii:hover{
+   background-color: rgb(150, 131, 23);
+   transform: scale(0.98);
+
+}
+
+
