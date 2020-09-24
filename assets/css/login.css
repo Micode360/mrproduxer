@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.signUp-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+    .col-72 h3{
+        font-family: roboto;
+        margin-bottom: 8px;
+    }
+
+.form-frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 40px;
+    border: 1px solid rgb(194, 187, 187);
+}
+
+.form-frame a{
+    text-decoration: none;
+    color: rgb(88, 86, 86);
+}
+
+.form-frame a:hover{
+    text-decoration: underline;
+}
+
+.form-frame input {
+    font-family: roboto;
+    padding: 12px 12px;
+    margin: 6px 0 6px 0;
+    width: 250px;
+}
+
+.forget-pass-line{
+    font-family: roboto;
+    font-size: 13.5px;
+    text-align: right;
+}
+
+.form-frame button{
+    font-family: roboto;
+}
+
+.fa-facebook-square{
+    margin-right: 4px;
+    font-size: 25px;
+    color: #3b5998 ;
+}
+
+.google{
+    position: absolute;
+    top: 8.5px;
+    left: 62px;
+    margin-right: 4px;
+    width: 15px;
+    height: auto;
+}
+
+
+.google-submit{
+    position: relative;
+}
+.submit{
+    padding: 8px 12px;
+    margin: 6px 0 6px 0;
+    width: 278px; 
+    background: none;
+    outline: none;
+    background: rgb(199, 184, 184);
+    border: 1px solid rgba(17, 24, 17, 0.2);
+}
+
+.submit-button{
+    background-color:rgb(170, 147, 15) ;
+    border: none;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.submit:active{
+    transform: scale(0.99);
+}
+.submit-button:hover {
+    background-color: rgb(150, 131, 23);
+    transform: scale(0.99);
+  }
+
+.submit-col-3 p{
+    font-family: roboto;
+    font-size: 13.5px;
+    margin-top: 8px;
+}
+
+.background-img-logo{
+    background: url(../img/mixer.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.background-img-logo:before{
+ content: "";
+ display: block;
+ background: rgba(0, 0, 0, 0.651);
+ position: absolute;
+ top: 0;
+ left: 50%;
+ right: 0;
+ bottom: 0;
+ z-index: 1;
+}
+
+
+@media(max-width:857px){
+    .signUp-container{
+        display: flex;
+        justify-content: center;
+        background: url(../img/mixer.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .signUp-container:before{
+        content: "";
+        display: block;
+        background: rgba(27, 26, 26, 0.651);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+       }
+
+       .form-container{
+           z-index: 1;
+       }
+
+       .form-frame{
+           background:rgba(15, 14, 14, 0.637);
+           border: none;
+           color: #ffffff;
+           border-radius: 2px;
+       }
+
+       .form-frame a{
+        text-decoration: none;
+        color: rgb(202, 192, 192);
+    }
+    .background-img-logo{
+            display: none;
+       }
+
+       .col-72 h3{
+           color: rgb(170, 147, 15);
+       }
+}
+
+@media(max-width:375px){
+    .form-frame input {
+        width: 200px;
+    }
+
+    .submit{
+
+        width: 278px;
+    }
+    
+
+    .google{
+        top: 14.3px;
+        left: 7.5%;
+    }
+
+    .fa-facebook-square{
+        margin-right: 6px;
+    }
+    
+}
+
+@media(max-width:329px){
+    .form-frame input {
+        width: 200px;
+    }
+
+    .submit{
+        /* padding: 8px 12px; */
+        width: 278px;
+    }
+    
+
+    .google{
+        top: 14.3px;
+        left: 7.5%;
+    }
+
+    .fa-facebook-square{
+        margin-right: 6px;
+    }
+    
+}

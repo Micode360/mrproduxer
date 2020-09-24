@@ -281,7 +281,7 @@
    padding: 44px; 
    text-align:left;
    font-size: 25px;
-  font-weight: lighter; 
+  font-weight: lighter;
 }
 
 .screen-2 h2{
@@ -456,6 +456,8 @@
 
 /*Contacts*/
  .contacts-container{
+    padding-top:40px;
+    padding-bottom:40px;
     background: #ffffff;
     color: rgb(14, 13, 13);
  }

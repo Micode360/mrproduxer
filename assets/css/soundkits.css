@@ -38,7 +38,10 @@
 }
 
 
-
+.sales-card-section{
+   padding-top: 45px;
+   padding-bottom: 45px;
+}
 
 .column-ii {
       position: relative;
@@ -46,7 +49,7 @@
       grid-template-columns: 1fr 4fr;
       background:#0e0d0d;
       color: #ffffff;
-      margin: 20px 40px 20px 40px;
+      margin: 20px 40px 30px 40px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
