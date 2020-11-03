@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="An musical site for selling beats and about mr produxers records">
     <meta name="author" description = "Miracle King">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/animate.css">
-    <link rel="stylesheet" href="./assets/css/contacts.css">
-    <link rel="stylesheet" href="./assets/css/query.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/contacts.css">
+    <link rel="stylesheet" href="./css/query.css">
     <link rel="shortcut icon" href="./css/img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,19 +26,19 @@
                 <li class="logo">Mr <span class="logo-span">Produxer</span></li>
 
 
-                <li class="link"><a href="#" class="exit-button">Login</a></li>
+                <li class="link"><a href="http://localhost:8080/login" class="exit-button">Login</a></li>
                 <li class="right-nav-link"><i id="search-icon" class="fas fa-search"></i></li>
-                <li class="right-nav-link"><a href="#" class="contacts">Contacts</a></li>
-                <li class="right-nav-link"><a href="#" class="soundKit">SoundKits</a></li>
-                <li class="right-nav-link"><a href="#" class="services">About</a></li>
-                <li class="right-nav-link"><a href="#" class="services">Home</a></li>
+                <li class="right-nav-link"><a href="http://localhost:8080/contacts" class="contacts">Contacts</a></li>
+                <li class="right-nav-link"><a href="http://localhost:8080/soundkits" class="soundKit">SoundKits</a></li>
+                <!-- <li class="right-nav-link"><a href="#" class="services">About</a></li> -->
+                <li class="right-nav-link"><a href="http://localhost:8080" class="services">Home</a></li>
             </ul>
         </div>
             <div class="transparent"></div>
             <nav class="navbar-burger">
                 <li class="nav-min-link"><a href="#" class="close">x</a></li>
                 <li class="nav-min-link"><a href="#" class="services-min">Home</a></li>
-                <li class="nav-min-link"><a href="#" class="services-min">About</a></li>
+                <!-- <li class="nav-min-link"><a href="#" class="services-min">About</a></li> -->
                 <li class="nav-min-link"><a href="#" class="soundKit-min">SoundKits</a></li>
                 <li class="nav-min-link"><a href="#" class="contacts-min">Contacts</a></li>
             </nav>
@@ -56,30 +56,35 @@
 
                <div class="contacts-container">
                 <div class="form-container">
-                    <form action="/action_page.php">
-                        <div class="col-75">
-                          <input class="contact-input" type="text" id="fname" name="firstname" placeholder="First Name">
-                          <div class="error-message"></div>
-                        </div>
-    
-                        <div class="col-75">
-                          <input class="contact-input" type="text" id="lname" name="lastname" placeholder="Last name">
-                          <div class="error-message"></div>
-                        </div>
-    
-                        <div class="col-75">
-                          <input class="contact-input" type="text" id="subject" name="lastname" placeholder="Subject">
-                          <div class="error-message"></div>
-                        </div>
-     
-                        <div class="col-75">
-                          <textarea class="contact-textarea" id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                          <div class="error-message"></div>
-                        </div>
-    
-                      <div class="button-case">
-                        <button class="submit">Submit</button>
+                    <form id="contact-form" novalidate>
+                      <div class="col-75">
+                        <input id="firstName" class="contact-input" type="text"  name="firstname" placeholder="First Name" onfocusout="checkFirstNameFunctionality()">
+                        <div class="error-message"></div>
                       </div>
+  
+                      <div class="col-75">
+                        <input id="lastName" class="contact-input" type="text" name="lastname" placeholder="Last name" onfocusout="checkLastNameFunctionality()">
+                        <div class="error-message"></div>
+                      </div>
+  
+                      <div class="col-75">
+                        <input id="email" class="contact-input" type="email" name="email" placeholder="Email" onfocusout="checkEmailFunctionality()">
+                        <div class="error-message"></div>
+                      </div>
+  
+                      <div class="col-75">
+                        <input id="subject" class="contact-input" type="text" name="subject" placeholder="Subject" onfocusout="checkSubjectFunctionality()">
+                        <div class="error-message"></div>
+                      </div>
+   
+                      <div class="col-75">
+                        <textarea id="message" class="contact-textarea" name="message" placeholder="Write something.." style="height:200px" onfocusout="checkMessageFunctionality()"></textarea>
+                        <div class="error-message"></div>
+                      </div>
+  
+                    <div class="button-case">
+                      <button class="submit">Submit</button>
+                    </div>
                     </form>
                   </div>
 
@@ -118,6 +123,6 @@
         </section>
     </main>
 
-    <script src="./assets/js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
